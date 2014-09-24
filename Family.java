@@ -9,7 +9,7 @@ public class Family {
     
     static {  
         Random rdm = new Random();
-        int randomInt = rdm.nextInt(7) + 1;
+        randomInt = rdm.nextInt(7) + 1;
     }
     
     
@@ -23,14 +23,14 @@ public class Family {
     }
     
     Family(int num) {
-        String userInput = "";
-        double numDouble = 0.0;
+        String userInput;
+        double numDouble;
         userInput = JOptionPane.showInputDialog("\n Input your income : ");
         
         Double varDouble = new Double(userInput);
         numDouble = varDouble.doubleValue();
         
-        System.out.println("Double, " + numDouble + varDouble);
+        System.out.println("Double, " +varDouble);
     }
     
     public static void main (String []args) {
@@ -42,6 +42,8 @@ public class Family {
         else {
             Family obj2 = new Family(randomInt);
         }
+        
+
     }
         
 }
